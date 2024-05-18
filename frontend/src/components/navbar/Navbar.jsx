@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-       <h2 className='logo'>Winn<span>Chaa</span></h2>
+       <h2 className='logo'>Come<span>Chop</span></h2>
 
        <ul className="navbar-menu">
          <li onClick={() => setMenu('home')} className={menu === 'home' ? 'active' : ''}>Home</li>
