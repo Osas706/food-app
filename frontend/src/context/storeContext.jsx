@@ -6,6 +6,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => { 
   const [cartItems, setCartItems ] = useState({});
 
+  //add to cart func
   const addToCart = (itemId) => {
     if(!cartItems[itemId]){
       setCartItems((prev) => ({...prev, [itemId]:1 }))
@@ -14,6 +15,7 @@ const StoreContextProvider = (props) => {
     };
   };
 
+  //remove from cart func
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({...prev,[itemId]:prev[itemId] - 1 }));
   };
@@ -22,6 +24,7 @@ const StoreContextProvider = (props) => {
     console.log(cartItems);
   }, [cartItems])
 
+  //store values
   const contextValue = {
     food_list,
     cartItems,
