@@ -11,7 +11,7 @@ const Navbar = () => {
         <h2 className="logo2">Admin<span>Panel</span></h2>
       </Link>
 
-      <img id="profile" src={assets.profile_image} alt="" />
+      <img className="profile" src={assets.profile_image} alt="" />
     </div>
   );
 };
