@@ -3,6 +3,7 @@ import cors from "cors";
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/food.route.js";
 import userRouter from "./routes/user.route.js";
+import cartRouter from "./routes/cart.route.js";
 import 'dotenv/config';
 
 
@@ -21,10 +22,11 @@ connectDB();
 //api endpoint
 app.use("/api/food", foodRouter);
 app.use("/api/user", userRouter);
+app.use("/api/cart", cartRouter);
 app.use("/images", express.static('uploads'));
 
 app.get("/", (req, res) => {
-   res.send('HEllo')
+   res.send('HEllO')
 });
 
 app.listen(port, () => {
