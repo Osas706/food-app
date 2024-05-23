@@ -18,7 +18,7 @@ const addFood = async (req, res) => {
     res.status(201).json({success: true, message: 'Food Added'});
    } catch (error) {
     console.log(error, 'Error in addFood controller');
-    res.status(404).json({success: false, message: 'Error', error})
+    res.status(404).json({success: false, message: 'Error', error});
    };
 };
 
