@@ -17,7 +17,7 @@ const Login = ({ setShowLogin }) => {
     const name = e.target.name;
     const value = e.target.value;
 
-    setData((data) => ({ ...data, [name]: value }));
+    setData({ ...data, [name]: value });
   };
 
   const onLogin = async(e) => {
@@ -36,8 +36,7 @@ const Login = ({ setShowLogin }) => {
       localStorage.setItem("token", res.data.token);
       setShowLogin(false);
     }else{
-      alert(re.data.message);
-      
+      alert(res.data.message);
     }
   };
 
@@ -51,7 +50,7 @@ const Login = ({ setShowLogin }) => {
         </div>
 
         <div className="login-inputs">
-          {currentState == "Login" ? ( "") : (
+          {currentState == "Login" ? ("") : (
             <input
               onChange={onChangeHandler}
               value={data.name}
