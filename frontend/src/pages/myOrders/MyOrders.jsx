@@ -15,7 +15,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if(token){
-            fetchOrders();
+          fetchOrders();
         };
         
     }, [token]);
