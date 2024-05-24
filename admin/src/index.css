@@ -26,6 +26,7 @@ hr{
 
 .app-content{
   display: flex;
+  padding-bottom: 50px;
 }
 
 .flex-col{
