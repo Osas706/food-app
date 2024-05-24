@@ -41,6 +41,25 @@
     background-color: #ffe1e1;
     cursor: pointer;
     color: #454545;
+    position: relative;
+}
+
+.my-orders-order button span{
+    display: none;
+}
+
+.my-orders-order button:hover span{
+    position: absolute;
+    background-color: rgb(247, 243, 243);
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 39px;
+    width: 100px;
+    display: flex;
+    justify-self: center;
+    border: 1px solid gray;
+    animation: fadeIn 3s;
 }
 
 @media (max-width: 900px){
