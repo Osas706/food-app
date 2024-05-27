@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => { 
-  const url = 'http://localhost:4000';
+  const url = 'https://food-app-mern-j4kd.onrender.com';
   const [cartItems, setCartItems ] = useState({});
   const [token, setToken] = useState('');
   const [food_list, setFoodList] = useState([]);
