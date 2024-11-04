@@ -27,9 +27,10 @@ app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 app.use("/images", express.static('uploads'));
 
-app.get("/", (req, res) => {
-   res.send('HEllO')
-});
+//test api
+// app.get("/", (req, res) => {
+//    res.send('HEllO')
+// });
 
 app.listen(port, () => {
     console.log(`Server started on http://localhost:${port}`);
